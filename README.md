@@ -2,7 +2,15 @@
 
 Maintained by [aipieksel](https://github.com/aipieksel).
 
-A small instruction skill for recording recurring, repository-fixable contributor friction. It writes concise entries to `.agents/PAPERCUTS.md` in the project being worked on, with a two-question filter that excludes machine failures, shell mistakes, transient flakiness, secrets and unrelated product bugs.
+Papercuts is a small Codex skill for noticing the repository problems that repeatedly slow contributors down: a stale command, confusing setup, misleading error, or similar friction the project itself can fix. It records concise, actionable notes in the project's `.agents/PAPERCUTS.md` while the main task continues.
+
+Use it during ordinary work when you can reproduce a repository-owned problem, or ask it to review existing notes and remove duplicates. Its filter keeps transient machine failures, secrets, and unrelated product bugs out of the list. The output is a maintenance queue, not an automatic code change.
+
+## Example workflow
+
+1. Reproduce a source- or documentation-owned obstacle.
+2. Check that a repository change could prevent it for the next contributor.
+3. Record a short note with the evidence and the likely fix.
 
 ## Install and use
 
